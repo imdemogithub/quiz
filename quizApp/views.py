@@ -217,7 +217,6 @@ def verify_otp(request):
             del request.session['reg_data']
 
             print('otp verify success!')
-
         else:
             print('invalid otp')
             return redirect(otp_page)
